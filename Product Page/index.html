@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravjee Detergent</title>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ravjee Detergent</title>
+        <!-- Google Fonts - Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo-container">
+                        <a href="../index.html">
+                            <img src="../assets/logo.png" alt="Logo" class="logo" />
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="desktop-menu">
+                        <div class="desktop-menu-items">
+                            <a href="#">Home</a>
+                            <a href="./Product Page/index.html">All Products</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button (Icon) -->
+                    <div class="mobile-menu-button">
+                        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false">
+                            <!-- Icon for menu closed (hamburger) -->
+                            <svg id="menu-closed-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <!-- Icon for menu open (X) -->
+                            <svg id="menu-open-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu, show/hide based on menu state. -->
+        <div class="mobile-menu" id="mobile-menu">
+            <!-- Main menu items -->
+            <div class="mobile-menu-items">
+                <a href="#">Home</a>
+                <a href="#">All Products</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <!-- Social media icons -->
+            <div class="social-media-icons">
+                <a href="#" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.494v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.225-.148-4.771-1.664-4.919-4.919-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44c0-.795-.645-1.44-1.441-1.44z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- products list -->
+        <main class="container">
+            <header class="header">
+                <h1>Our Products</h1>
+            </header>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <img src="../assets/Ravjee-detergent-powder.JPG" alt="Product image 1" class="product-image">
+                    <div class="product-content">
+                        <h2 class="product-title">Ravjee Detergent Powder 1 Kg</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹ 80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="../assets/Ravjee-detergent-powder.JPG" alt="Product image 1" class="product-image">
+                    <div class="product-content">
+                        <h2 class="product-title">Ravjee Detergent Powder 100 Gm</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹ 10.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="../assets/Ravjee-detergent-powder.JPG" alt="Product image 1" class="product-image">
+                    <div class="product-content">
+                        <h2 class="product-title">Ravjee Detergent Powder 500 Gm</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹ 40.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <img src="../assets/dishwashliquid.JPG" alt="Product image 1" class="product-image">
+                    <div class="product-content">
+                        <h2 class="product-title">Ravjee Dishwash Gel 150 ml</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹ 20.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <img src="../assets/liquid-sache.jpg" alt="Product image 1" class="product-image">
+                    <div class="product-content">
+                        <h2 class="product-title">Ravjee Dishwash Gel Sachet 15 ml</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹ 2.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <img src="../assets/white-cake.JPG" alt="Product image 1" class="product-image">
+                    <div class="product-content">
+                        <h2 class="product-title">Ravjee White Cake 165 Gm</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹ 10.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- footer -->
+
+
+    </body>
+    <script src="../Product Page/script.js"></script>
+
+    </html>
+
+    <!-- product list -->
+
+    <!-- footer -->
+    <main></main>
+
+    <footer>
+        <!-- Decorative, pure-CSS background -->
+        <div class="bubbles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="sparkles" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="wrap">
+            <div class="grid">
+                <!-- Brand -->
+                <div class="brand">
+                    <div class="footer-logo">
+                        <img src="../assets/logo.png" alt="">
+                    </div>
+                    <p>Experience the new standard of clean with our powerful, eco-friendly formulas.</p>
+                </div>
+
+                <!-- Company Links -->
+                <nav aria-label="Company">
+                    <h4 class="heading">Company</h4>
+                    <ul class="links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact -->
+                <div class="contact">
+                    <h4 class="heading">Contact</h4>
+                    <p>31, Gud Market, New market yard,
+                        Ring Road,<br> Jalna - 431203</p>
+                    <p>contact : 91 9067137907</p>
+                    <p>gmail</p>
+                    <div class="social" aria-label="Social links">
+                        <a class="ico" href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07c0 5.02 3.66 9.19 8.44 9.98v-7.06H7.9v-2.92h2.4V9.41c0-2.37 1.41-3.68 3.57-3.68 1.03 0 2.1.18 2.1.18v2.3h-1.18c-1.16 0-1.52.72-1.52 1.45v1.75h2.58l-.41 2.92h-2.17v7.06c4.78-.79 8.44-4.96 8.44-9.98z" />
+                            </svg>
+                        </a>
+                        <a class="ico" href="#" aria-label="Twitter/X">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M3 3h4.6l5.1 7.1L18.3 3H21l-7.3 9.9L21.5 21H17l-5.5-7.6L5.7 21H3l7.9-10.7L3 3z" />
+                            </svg>
+                        </a>
+                        <a class="ico" href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm6.25-2.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z" />
+                            </svg>
+                        </a>
+                        <a class="ico" href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8.98h5V24H0zM8.54 8.98H13v2.05h.07c.62-1.18 2.14-2.43 4.41-2.43 4.71 0 5.58 3.1 5.58 7.13V24h-5v-6.61c0-1.58-.03-3.61-2.2-3.61-2.2 0-2.53 1.72-2.53 3.5V24h-5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2025, Nirmala Udyog All rights reserved.
+                <a href="" class="Privacypolicy">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="../Product Page/script.js"></script>
+
+</html>
