@@ -74,7 +74,7 @@ button {
   color: #374151;
   padding: 0.5rem 0.75rem;
   border-radius: 0.375rem;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s, background-color 0.3s;
 }
@@ -325,7 +325,7 @@ button {
     order: 1;
   }
   .promo-text h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 }
 /* map */
@@ -639,8 +639,6 @@ footer {
   animation: rise linear infinite;
 }
 
-/* create many bubbles with different sizes, speeds, and horizontal positions */
-/* You can duplicate/adjust these for denser effect */
 .bubbles span:nth-child(1) {
   left: 4%;
   width: 10px;
