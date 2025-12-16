@@ -283,7 +283,7 @@ body {
 .story-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 80px;
   align-items: center;
   margin-bottom: 80px;
 }
@@ -317,6 +317,7 @@ body {
 .story-image {
   position: relative;
   height: 400px;
+  width: 340px;
   background: linear-gradient(135deg, #667eea20, #764ba220);
   border-radius: 20px;
   display: flex;
@@ -325,6 +326,18 @@ body {
   font-size: 4rem;
   color: #667eea;
   box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+}
+
+@media (max-width: 780px) {
+  .story-image {
+    margin: 0 auto;
+  }
+}
+
+.story-image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
 }
 
 .timeline {
