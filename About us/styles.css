@@ -151,7 +151,7 @@ button {
   padding: 1rem 1.5rem;
   font-size: 1.125rem;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   transition: background-color 0.3s;
 }
 
