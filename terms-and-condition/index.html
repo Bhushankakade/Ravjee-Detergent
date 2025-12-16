@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Ravjee Detergent</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/logo.png" alt="Logo" class="logo" />
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="desktop-menu">
+                    <div class="desktop-menu-items">
+                        <a href="../index.html">Home</a>
+                        <a href="../Product Page/index.html">All Products</a>
+                        <a href="../About us/index.html">About Us</a>
+                        <a href="../contact page/index.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button (Icon) -->
+                <div class="mobile-menu-button">
+                    <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false">
+                        <!-- Icon for menu closed (hamburger) -->
+                        <svg id="menu-closed-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon for menu open (X) -->
+                        <svg id="menu-open-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu, show/hide based on menu state. -->
+    <div class="mobile-menu" id="mobile-menu">
+        <!-- Main menu items -->
+        <div class="mobile-menu-items">
+            <a href="../index.html">Home</a>
+            <a href="../Product Page/index.html">All Products</a>
+            <a href="../About us/index.html">About Us</a>
+            <a href="../contact page/index.html">Contact</a>
+        </div>
+        <!-- Social media icons -->
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=61577246573464" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.494v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/ravjee_official" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.225-.148-4.771-1.664-4.919-4.919-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44c0-.795-.645-1.44-1.441-1.44z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/ravjee/" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header / Hero -->
+    <header>
+        <div class="container">
+            <h1>Terms & Conditions</h1>
+            <p>Rules & Responsibilities</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="card">
+
+            <!-- Intro -->
+            <div class="intro">
+                <p class="text-sm text-slate-500" style="font-weight: 500;">Last Updated: <span id="current-date">[Add
+                        Date]</span></p>
+                <p>
+                    Welcome to <strong>ravjee.netlify.app</strong>, the official website of Ravjee Detergent, owned and
+                    operated by <strong>Nirmala Udyog</strong> (“Company”, “we”, “our”, “us”).
+                </p>
+                <p>
+                    By accessing or using this Website, you agree to follow and be bound by these Terms & Conditions.
+                    These Terms apply to all visitors, users, and any person who accesses this Website.
+                </p>
+                <p class="text-italic" style="color: var(--red-700);">If you do not agree with any part of these Terms,
+                    please do not use our Website.</p>
+            </div>
+
+            <!-- Content Sections -->
+            <div>
+
+                <!-- Section 1 -->
+                <section>
+                    <h2><span class="number-badge">1</span> Acceptance of Terms</h2>
+                    <p>By using this Website, you acknowledge that:</p>
+                    <ul class="list-disc gray-box">
+                        <li>You have read, understood, and agreed to these Terms & Conditions.</li>
+                        <li>You are legally capable of entering into binding agreements.</li>
+                        <li>Your use of the Website will comply with all applicable laws and regulations.</li>
+                    </ul>
+                    <p>These Terms form a binding agreement between you and Ravjee Detergent.</p>
+                </section>
+
+                <!-- Section 2 -->
+                <section>
+                    <h2><span class="number-badge">2</span> Purpose of the Website</h2>
+                    <p>This Website is created for:</p>
+                    <ul class="list-disc" style="margin-left: 0.5rem;">
+                        <li>Providing information about Ravjee Detergent products</li>
+                        <li>Sharing brand content, product descriptions, and company details</li>
+                        <li>Offering contact options for inquiries</li>
+                    </ul>
+                    <p class="text-sm text-slate-500">This Website does not support online transactions, user accounts,
+                        payments, delivery services, or commercial checkout systems.</p>
+                </section>
+
+                <!-- Section 3 -->
+                <section>
+                    <h2><span class="number-badge">3</span> Intellectual Property Rights</h2>
+                    <div class="grid grid-2">
+                        <div class="border-left-blue">
+                            <h3>3.1 Ownership</h3>
+                            <p class="text-sm">All intellectual property on this Website is owned by Ravjee Detergent /
+                                Nirmala Udyog, including:</p>
+                            <ul class="list-disc text-sm text-slate-500" style="margin-bottom: 0;">
+                                <li>Logos & Trademarks</li>
+                                <li>Product names & Packaging designs</li>
+                                <li>Website design and layout</li>
+                                <li>Images, videos, graphics</li>
+                                <li>Written content and product descriptions</li>
+                            </ul>
+                        </div>
+                        <div class="border-left-red">
+                            <h3>3.2 Restrictions</h3>
+                            <p class="text-sm">You are <strong>not</strong> permitted to:</p>
+                            <ul class="list-disc text-sm text-slate-500" style="margin-bottom: 0;">
+                                <li>Copy, reproduce, distribute, or republish any content</li>
+                                <li>Modify or alter any material without permission</li>
+                                <li>Use brand assets for commercial purposes</li>
+                                <li>Claim ownership of content on this Website</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500" style="margin-top: 1rem;">Any unauthorized use may violate
+                        copyright and trademark laws.</p>
+                </section>
+
+                <!-- Section 4 -->
+                <section>
+                    <h2><span class="number-badge">4</span> User Responsibilities</h2>
+                    <p>When accessing this Website, you agree <strong>NOT</strong> to:</p>
+                    <div class="gray-box"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                        <div class="flex items-center">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <span class="text-sm">Use the Website for any unlawful purpose</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <span class="text-sm">Attempt to hack or damage the Website</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <span class="text-sm">Upload harmful code or malware</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <span class="text-sm">Send false or misleading inquiries</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 5 & 6 -->
+                <div class="grid grid-2">
+                    <section>
+                        <h2><span class="number-badge">5</span> Accuracy of Information</h2>
+                        <p class="text-sm">We aim to provide complete and accurate product information. However:</p>
+                        <ul class="list-disc text-sm text-slate-500">
+                            <li>Product formulas or packaging may change</li>
+                            <li>Photographs may differ from actual packaging</li>
+                            <li>Human or technical errors may occur</li>
+                        </ul>
+                        <p class="text-sm text-italic">Ravjee Detergent is not responsible for any inaccuracies or
+                            outdated content.</p>
+                    </section>
+                    <section>
+                        <h2><span class="number-badge">6</span> Third-Party Links</h2>
+                        <p class="text-sm">Our Website may include links to social media, external product showcases, or
+                            distributor sites. These third-party sites are not controlled by us.</p>
+                        <p class="text-sm">We do not endorse their content or guarantee their security. Users access
+                            these external sites at their own risk.</p>
+                    </section>
+                </div>
+
+                <!-- Section 7 & 8 -->
+                <div class="info-box-blue" style="margin-bottom: 2.5rem;">
+                    <div class="grid grid-2">
+                        <div>
+                            <h3 style="color: var(--blue-900);">7. No Warranties</h3>
+                            <p class="text-sm">This Website is provided “as is” without any warranties. We do not
+                                guarantee error-free operation, uninterrupted access, or that the site is free of
+                                harmful components.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--blue-900);">8. Limitation of Liability</h3>
+                            <p class="text-sm">Ravjee Detergent is not liable for any damages arising from use of the
+                                Website, reliance on information, or technical failures. Your sole remedy is to stop
+                                using the Website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sections 9 - 13 -->
+                <section>
+                    <h2><span class="number-badge">9</span> Product Representation</h2>
+                    <p class="text-sm">While we showcase visuals: Actual colors/packaging may vary, availability differs
+                        by region, and distributors may offer different pricing. The Website does not function as an
+                        online store. Details are informational only.</p>
+                </section>
+
+                <section>
+                    <h2><span class="number-badge">10</span> Communication With Us</h2>
+                    <p>When you contact us (Email, Phone, Forms), you acknowledge that your message is voluntary, we may
+                        reference it, and we are not obligated to respond to every message. Communication is governed by
+                        our Privacy Policy.</p>
+                </section>
+
+                <section>
+                    <h2><span class="number-badge">11</span> Privacy Policy Reference</h2>
+                    <p>By using this Website, you also agree to the terms described in our Privacy Policy, which
+                        explains how we collect and handle data.</p>
+                </section>
+
+                <div class="grid grid-2">
+                    <section>
+                        <h2><span class="number-badge">12</span> Availability</h2>
+                        <p class="text-sm">We reserve the right to modify, update, or suspend the Website for
+                            maintenance or improvements at any time. We are not responsible for downtime.</p>
+                    </section>
+                    <section>
+                        <h2><span class="number-badge">13</span> Indemnification</h2>
+                        <p class="text-sm">You agree to indemnify Ravjee Detergent from any claims resulting from your
+                            use of the Website or violation of these Terms.</p>
+                    </section>
+                </div>
+
+                <!-- Section 14 & 15 -->
+                <section>
+                    <h2><span class="number-badge">14</span> Changes to Terms</h2>
+                    <p>We may update these Terms & Conditions at any time. The updated Terms will replace all previous
+                        versions. Continued use means acceptance of the new Terms.</p>
+
+                    <h2 style="margin-top: 1.5rem;"><span class="number-badge">15</span> Governing Law</h2>
+                    <p>These Terms are governed by the laws of India. Any disputes will be resolved under the
+                        jurisdiction of the courts located in Maharashtra, India.</p>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="contact-section" id="contact">
+                    <div class="contact-header">
+                        <h2><span class="number-badge">16</span> Contact Information</h2>
+                    </div>
+                    <p style="color: var(--slate-300); margin-bottom: 1.5rem;">For questions, concerns, or
+                        clarifications related to these Terms & Conditions:</p>
+
+                    <div>
+                        <div class="contact-row">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            <div>
+                                <h4 style="font-weight: 700; font-size: 1.125rem;">Ravjee Detergent</h4>
+                                <p style="color: var(--slate-300); font-size: 0.875rem;">Shop No. 31, Gud Market, New
+                                    Mondha,<br>Jalna – 431203, Maharashtra, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <a href="tel:+919067137907" style="transition: color 0.2s;">+91 9067137907</a>
+                        </div>
+
+                        <div class="contact-row">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:ravjeedet@rediffmail.com"
+                                style="transition: color 0.2s;">ravjeedet@rediffmail.com</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <main></main>
+
+    <footer>
+        <!-- Decorative, pure-CSS background -->
+        <div class="bubbles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="sparkles" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="wrap">
+            <div class="grid">
+                <!-- Brand -->
+                <div class="brand">
+                    <div class="footer-logo">
+                        <img src="../assets/logo.png" alt="">
+                    </div>
+                    <p>Experience the new standard of clean with our powerful, eco-friendly formulas.</p>
+                </div>
+
+                <!-- Company Links -->
+                <nav aria-label="Company">
+                    <h4 class="heading">Company</h4>
+                    <ul class="links">
+                        <li><a href="../About us/index.html">About Us</a></li>
+                        <li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+                        <li><a href="../terms-and-condition/index.html">Terms of Service</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact -->
+                <div class="contact">
+                    <h4 class="heading">Contact</h4>
+                    <p>Ravjee Detergent, Shop no. 31, Gud Market, New Mondha, Jalna - 431203</p>
+                    <p>contact : 91 9067137907</p>
+                    <p>gmail : ravjeedet@rediffmail.com</p>
+                    <div class="social" aria-label="Social links">
+                        <a class="ico" href="https://www.facebook.com/profile.php?id=61577246573464" target="_blank"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07c0 5.02 3.66 9.19 8.44 9.98v-7.06H7.9v-2.92h2.4V9.41c0-2.37 1.41-3.68 3.57-3.68 1.03 0 2.1.18 2.1.18v2.3h-1.18c-1.16 0-1.52.72-1.52 1.45v1.75h2.58l-.41 2.92h-2.17v7.06c4.78-.79 8.44-4.96 8.44-9.98z" />
+                            </svg>
+                        </a>
+
+                        <a class="ico" href="https://www.instagram.com/ravjee_official" target="_blank"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm6.25-2.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z" />
+                            </svg>
+                        </a>
+                        <a class="ico" href="https://www.linkedin.com/company/ravjee/" target="_blank"
+                            aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8.98h5V24H0zM8.54 8.98H13v2.05h.07c.62-1.18 2.14-2.43 4.41-2.43 4.71 0 5.58 3.1 5.58 7.13V24h-5v-6.61c0-1.58-.03-3.61-2.2-3.61-2.2 0-2.53 1.72-2.53 3.5V24h-5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2025, Nirmala Udyog All rights reserved.
+                <a href="../privacy-policy/index.html" class="Privacypolicy">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
